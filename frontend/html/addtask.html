@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task - TaskZen</title>
+    
+    <link rel="stylesheet" href="../css/addedit.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+<div class="max-w-2xl mx-auto px-4 py-12">
+    <a href="usertask.html" class="inline-flex items-center text-gray-600 hover:text-violet-700 mb-8 font-medium transition-colors no-underline">
+        <span class="mr-2">←</span> Cancel and Go Back
+    </a>
+
+    <div class="form-card bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+            Create New Task
+        </h2>
+        
+        <form action="usertask.html" method="GET" class="space-y-6">
+            <div>
+                <label class="form-label block text-sm font-semibold text-gray-700 mb-2">Task Title</label>
+                <input type="text" name="title" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-violet-500 outline-none transition-all" placeholder="What needs to be done?" required>
+            </div>
+
+            <div>
+                <label class="form-label block text-sm font-semibold text-gray-700 mb-2">Description</label>
+                <textarea name="description" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-violet-500 outline-none transition-all" placeholder="Add more details..." rows="3"></textarea>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="form-label block text-sm font-semibold text-gray-700 mb-2">Priority</label>
+                    <select name="priority" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-violet-500 outline-none transition-all bg-white">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="form-label block text-sm font-semibold text-gray-700 mb-2">Due Date</label>
+                    <input type="date" name="dueDate" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-violet-500 outline-none transition-all" required>
+                </div>
+            </div>
+
+            <div class="pt-4">
+                <button type="submit" class="btn-save w-full bg-violet-700 text-white py-4 rounded-lg font-bold hover:bg-violet-800 transition-all shadow-md active:scale-[0.98]">
+                    Create Task
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

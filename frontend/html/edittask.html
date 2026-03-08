@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task - TaskZen</title>
+    
+    <link rel="stylesheet" href="../css/addedit.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+<div class="max-w-2xl mx-auto px-4 py-12">
+    <a href="taskdetail.html" class="inline-flex items-center text-gray-600 hover:text-violet-700 mb-8 font-medium transition-colors no-underline">
+        <span class="mr-2">←</span> Discard Changes
+    </a>
+
+    <div class="form-card bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+            Update Task
+        </h2>
+        
+        <form action="taskdetail.html" method="GET" class="space-y-6">
+            <div>
+                <label class="form-label block text-sm font-semibold text-gray-700 mb-2">Task Title</label>
+                <input type="text" value="Design User Interface" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-violet-500 outline-none transition-all" required>
+            </div>
+
+            <div>
+                <label class="form-label block text-sm font-semibold text-gray-700 mb-2">Description</label>
+                <textarea class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-violet-500 outline-none transition-all" rows="3">Create a high-fidelity mockup for the new dashboard.</textarea>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="form-label block text-sm font-semibold text-gray-700 mb-2">Priority</label>
+                    <select class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-violet-500 outline-none transition-all bg-white">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High" selected>High</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="form-label block text-sm font-semibold text-gray-700 mb-2">Due Date</label>
+                    <input type="date" value="2026-03-15" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-violet-500 outline-none transition-all" required>
+                </div>
+            </div>
+
+            <div class="pt-4 flex gap-4">
+                <button type="submit" class="btn-save flex-1 bg-violet-700 text-white py-4 rounded-lg font-bold hover:bg-violet-800 transition-all shadow-md">
+                    Update Task
+                </button>
+                <button type="button" onclick="window.location.href='usertask.html'" class="px-6 py-4 rounded-lg font-bold text-red-600 border border-red-100 hover:bg-red-50 transition-all">
+                    Delete
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

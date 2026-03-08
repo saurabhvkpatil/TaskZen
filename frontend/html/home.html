@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TaskZen | Home</title>
+    <link rel="icon" type="image/png" href="../../assets/images/taskzenICON.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <div id="top">
+        <!-- ================= NAVBAR ================= -->
+
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: blueviolet;">
+                <div class="container">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="../../assets/images/taskzenLOGO.jpg"height="45">
+                    </a>
+
+                    <!-- Menu Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Desktop Menu -->
+                    <ul class="navbar-nav mx-auto gap-4 d-none d-lg-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <a href="../html/login.html" class="btn btn-light fw-bold d-none d-lg-block loginbtn">Login</a>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- ================= OFFCANVAS MOBILE MENU ================= -->
+
+        <div class="offcanvas offcanvas-start" id="mobileMenu">
+
+            <div class="offcanvas-header">
+                <a class="navbar-brand" href="#">
+                    <img src="../../assets/images/taskzenLOGO.jpg" height="45">
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item mb-3">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item mb-3">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item mb-3">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                    <li class="nav-item mt-3">
+                        <a href="../html/login.html" class="btn btn-light w-100 fw-bold">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <main class="maincontent">            
+
+            <!-- HERO SECTION -->
+            <section class="hero-section py-5 text-center">
+                <div class="container">
+
+                    <h1 class="display-4 fw-bold">Organize Your Life with TaskZen</h1>
+
+                    <p class="lead text-muted mt-3">
+                        Organize tasks, manage priorities and never miss deadlines.
+                    </p>
+
+                    <a href="../html/register.html" class="btn btn-primary btn-lg mt-4">
+                        Get Started
+                    </a>
+
+                </div>
+            </section>
+
+
+            <!-- SMART FEATURES -->
+            <section class="smart-features py-5 bg-light">
+
+                <div class="container">
+
+                    <h2 class="text-center mb-5 fw-bold">Smart Features</h2>
+
+                    <div class="row g-4">
+
+                        <div class="col-md-4">
+                            <div class="card text-center p-4 shadow-sm h-100 border-0">
+                                <h5 class="fw-bold">Priority Task Cards</h5>
+                                <p>
+                                    Tasks are organized using color-coded priority levels
+                                    (High, Medium, Low) so you instantly know which task is important.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card text-center p-4 shadow-sm h-100 border-0">
+                                <h5 class="fw-bold">Task Management</h5>
+                                <p>
+                                    Create, edit, and organize tasks easily.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card text-center p-4 shadow-sm h-100 border-0">
+                                <h5 class="fw-bold">Productivity Analytics</h5>
+                                <p>
+                                    Track your work using task summaries, completed vs pending charts,
+                                    and monthly productivity insights.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card text-center p-4 shadow-sm h-100 border-0">
+                                <h5 class="fw-bold">Priority Levels</h5>
+                                <p>
+                                    Set Low, Medium, or High priority tasks.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card text-center p-4 shadow-sm h-100 border-0">
+                                <h5 class="fw-bold">Task Management</h5>
+                                <p>
+                                    Create tasks, view details, edit information, delete tasks,
+                                    and mark them as completed easily.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card text-center p-4 shadow-sm h-100 border-0">
+                                <h5 class="fw-bold">Due Dates</h5>
+                                <p>
+                                    Stay on track and never miss deadlines.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- HOW IT WORKS -->
+            <section class="how-it-works py-5">
+
+                <div class="container text-center">
+
+                    <h2 class="mb-5 fw-bold">How TaskZen Works</h2>
+
+                    <div class="row g-4">
+
+                        <div class="col-md-4">
+                            <h5>Create Account</h5>
+                            <p>Sign up quickly and access your personal task dashboard.</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h5>Add Tasks</h5>
+                            <p>Create tasks with priority levels, descriptions, and due dates.</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h5>Stay Productive</h5>
+                            <p>Track your progress and complete tasks efficiently.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- APP PREVIEW -->
+            <section class="app-preview py-5 bg-light">
+                <div class="container text-center">
+
+                    <h2 class="mb-4">Simple & Clean Dashboard</h2>
+
+                    <p class="text-muted mb-5">
+                        Manage all your tasks in one clean and organized interface.
+                    </p>
+
+                    <<img src="../../assets/images/taskzenLOGO.jpg" class="img-fluid shadow rounded"
+                     alt="TaskZen Dashboard" style="max-width: 350px; display: block; margin: 0 auto;">TaskZen Dashboard
+                        
+
+                </div>
+            </section>
+
+
+            <!-- CALL TO ACTION -->
+            <section class="call-to-action py-5 text-center text-white">
+
+                <div class="container">
+
+                    <h2 class="fw-bold">Start Managing Your Tasks Today</h2>
+
+                    <p class="mt-3">
+                        Join TaskZen and organize your work smarter.
+                    </p>
+
+                    <a href="../html/register.html" class="btn btn-light btn-lg mt-3">
+                        Join TaskZen
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- ================= FOOTER ================= -->
+        <footer>
+            <div id="foot_top">
+                <a href="#top">Back to Top</a>
+            </div>
+
+            <div id="foot_mid">
+                <div class="container">
+                    <div class="row text-center text-md-start">
+                        <div class="col-md-4 mb-4">
+                            <img src="../../assets/images/taskzenLOGO.jpg" height="60">
+                            <p class="mt-2">Manage your tasks with TaskZen easily.</p>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <p><strong>Quick Links:</strong></p>
+
+                            <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4">
+                            <p><strong>Developed by:</strong></p>
+
+                            <ul class="list-unstyled">
+                                <li><a href="#">Saurabh</a></li>
+                                <li><a href="#">Asma</a></li>
+                                <li><a href="#">Yashasweeni</a></li>
+                            </ul>
+
+                            <p>iTprenure, 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="foot_bottom">
+                <p>Developed by students of iTprenure</p>
+                <p>© 2026 TaskZen | All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

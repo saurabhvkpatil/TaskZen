@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details - TaskZen</title>
+    
+    <link rel="stylesheet" href="../css/taskdetail.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+<div class="detail-container">
+    <a href="usertask.html" class="inline-flex items-center text-gray-600 hover:text-violet-700 mb-8 font-medium transition-colors no-underline">
+        <span class="mr-2">←</span> Back to Dashboard
+    </a>
+
+    <div class="detail-card">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+            <div>
+                <h2 class="detail-title font-bold text-gray-900 mb-2">
+                    Design User Interface
+                </h2>
+                <span class="badge badge-high">High Priority</span>
+            </div>
+            
+            <div class="flex flex-col gap-2 text-sm text-gray-500">
+                <div class="flex items-center">
+                    <span class="mr-2">📅</span>
+                    <span>Due: <strong>March 15, 2026</strong></span>
+                </div>
+                <div class="flex items-center">
+                    <span class="mr-2 text-green-500">✓</span>
+                    <span>Status: <strong>In Progress</strong></span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-gray-100 mb-8">
+
+        <div class="mb-10">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4">
+                Description
+            </h4>
+            <p class="detail-desc">
+                Create a high-fidelity mockup for the new task management dashboard. 
+                Ensure the color palette aligns with the TaskZen brand guidelines and focuses on user accessibility.
+            </p>
+        </div>
+
+        <div class="pt-6 border-t border-gray-100 flex flex-col md:flex-row gap-4">
+            <button onclick="window.location.href='edittask.html'" class="flex items-center justify-center px-8 py-3 bg-violet-700 text-white rounded-lg font-bold hover:bg-violet-800 transition-all shadow-md active:scale-95">
+                <span class="mr-2">✎</span> Edit Task
+            </button>
+            
+            <button onclick="if(confirm('Are you sure you want to delete this task?')) window.location.href='usertask.html'" class="flex items-center justify-center px-8 py-3 bg-white text-red-600 border border-red-100 rounded-lg font-bold hover:bg-red-50 transition-all active:scale-95">
+                <span class="mr-2">🗑</span> Delete Task
+            </button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
