@@ -3,62 +3,59 @@ html {
 }
 
 /* header */
-.navbar {
+.navbar{
     background-color: blueviolet !important;
 }
 
-.navbar-nav a {
+.navbar-nav a{
     color: white;
     font-weight: bold;
     transition: 0.5s;
 }
-
-.navbar-nav a:hover {
+.navbar-nav a:hover{
     color: red;
 }
 
-.loginbtn {
+.loginbtn{
     background-color: white;
     color: blueviolet;
     font-weight: bold;
     transition: 0.5s;
 }
-
-.loginbtn:hover {
+.loginbtn:hover{
     background-color: rgb(0, 183, 255);
     color: white;
 }
-
 /* Offcanvas same color as header */
 
-.offcanvas {
+.offcanvas{
     background-color: blueviolet;
     color: white;
 }
 
 /* Links inside offcanvas */
 
-.offcanvas .nav-link {
+.offcanvas .nav-link{
     color: white;
     font-weight: bold;
     transition: 0.5s;
 }
 
-.offcanvas .nav-link:hover {
+.offcanvas .nav-link:hover{
     color: red;
 }
 
 /* Login button styling */
 
-.offcanvas .btn {
+.offcanvas .btn{
     background-color: white;
     color: blueviolet;
     font-weight: bold;
     transition: 0.5s;
 }
 
-.offcanvas .btn:hover {
-    background-color: rgb(0, 183, 255);
+.offcanvas .btn:hover{
+    background-color: rgb(0,183,255);
     color: white;
 }
 
@@ -76,7 +73,7 @@ html {
     transition: 0.5s;
 }
 
-#foot_top a:hover {
+#foot_top a:hover{
     color: blueviolet;
 }
 
@@ -107,32 +104,32 @@ html {
     padding: 80px 0;
 }
 
-.hero-section a {
+.hero-section a{
     background-color: white;
     color: blueviolet;
     font-weight: bold;
     transition: 0.5s;
 }
 
-.hero-section a:hover {
+.hero-section a:hover{
     background-color: blueviolet;
     color: white;
     font-weight: bold;
 }
 
-.call-to-action {
+.call-to-action{
     background-color: rgb(0, 183, 255);
     color: red !important;
 }
 
-.call-to-action a {
+.call-to-action a{
     background-color: white;
     color: blueviolet;
     font-weight: bold;
     transition: 0.5s;
 }
 
-.call-to-action a:hover {
+.call-to-action a:hover{
     background-color: blueviolet;
     color: white;
     font-weight: bold;

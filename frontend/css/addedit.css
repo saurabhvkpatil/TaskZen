@@ -1,0 +1,106 @@
+/* addedit.css - Modern TaskZen Theme */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+body {
+    background-color: #f8fafc; /* Gray-50 */
+}
+
+.form-container {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-card {
+    background: white;
+    padding: 40px; /* Consistent spacing */
+    border-radius: 16px; /* Matches rounded-2xl */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f1f5f9;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label, 
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151; /* Gray-700 */
+}
+
+/* Unified styling for all input types */
+.form-group input, 
+.form-group textarea, 
+.form-group select,
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db; /* Gray-300 */
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: inherit;
+    transition: all 0.2s ease;
+    background-color: #ffffff;
+}
+
+/* Subtle focus effect matching the Auth pages */
+.form-group input:focus, 
+.form-group textarea:focus, 
+.form-group select:focus,
+.form-input:focus {
+    border-color: #6d28d9; /* Violet-700 */
+    box-shadow: 0 0 0 4px rgba(109, 40, 217, 0.1);
+    outline: none;
+}
+
+.btn-save {
+    background: #6d28d9; /* Violet-700 */
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-save:hover {
+    background: #5b21b6; /* Violet-800 */
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(109, 40, 217, 0.2);
+}
+
+.btn-save:active {
+    transform: translateY(0);
+}
+
+/* Style for the secondary/delete button if needed */
+.btn-delete {
+    background: #fff;
+    color: #ef4444;
+    border: 1px solid #fee2e2;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-delete:hover {
+    background: #fef2f2;
+}
