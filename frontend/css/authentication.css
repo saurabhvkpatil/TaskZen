@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+.auth-container {
+    background: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+    margin-bottom: 20px;
+}
+
+.btn{
+    color: white;
+    font-weight: bold;
+}
+
+.btn:hover{
+    border: 2px solid rgb(0, 183, 255);
+    background-color: white;
+    color: rgb(0, 183, 255);
+}
+
+.switch {
+    font-size: 14px;
+}
+
+.switch a {
+    color: rgb(0, 179, 255);
+    text-decoration: none;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}

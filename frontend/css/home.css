@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+.navbar {
+    background-color: blueviolet !important;
+}
+
+.navbar-nav a {
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.navbar-nav a:hover {
+    color: red;
+}
+
+.loginbtn {
+    background-color: white;
+    color: blueviolet;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.loginbtn:hover {
+    background-color: rgb(0, 183, 255);
+    color: white;
+}
+
+/* Offcanvas same color as header */
+
+.offcanvas {
+    background-color: blueviolet;
+    color: white;
+}
+
+/* Links inside offcanvas */
+
+.offcanvas .nav-link {
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.offcanvas .nav-link:hover {
+    color: red;
+}
+
+/* Login button styling */
+
+.offcanvas .btn {
+    background-color: white;
+    color: blueviolet;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.offcanvas .btn:hover {
+    background-color: rgb(0, 183, 255);
+    color: white;
+}
+
+/* FOOTER */
+
+#foot_top {
+    background: rgb(50, 50, 50);
+    text-align: center;
+    padding: 12px;
+}
+
+#foot_top a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#foot_top a:hover {
+    color: blueviolet;
+}
+
+#foot_mid {
+    background: rgb(25, 25, 25);
+    color: white;
+    padding: 40px 0;
+}
+
+#foot_mid a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#foot_mid a:hover {
+    color: blueviolet;
+}
+
+#foot_bottom {
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+.maincontent {
+    padding: 80px 0;
+}
+
+.hero-section a {
+    background-color: white;
+    color: blueviolet;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.hero-section a:hover {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}
+
+.call-to-action {
+    background-color: rgb(0, 183, 255);
+    color: red !important;
+}
+
+.call-to-action a {
+    background-color: white;
+    color: blueviolet;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.call-to-action a:hover {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}
