@@ -1,0 +1,328 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.dashboard-main {
+    min-height: 100vh;
+    background-image: url("../images/dashboardbg01.png");
+    background-repeat: repeat;
+    background-size: 300px;
+}
+
+/* ---------- HEADER ---------- */
+
+.navbar {
+    margin-bottom: -80px;
+    transition: 0.4s;
+}
+
+/* Navbar when page is at TOP */
+
+/* .navbar-top {
+    background-color: transparent;
+} */
+
+.navbar-top {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-top .nav-link {
+    color: black;
+}
+
+.navbar-top .loginbtn {
+    background-color: blueviolet;
+    color: white;
+}
+
+/* Navbar when user SCROLLS */
+
+.navbar-scrolled {
+    background-color: blueviolet;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-scrolled .nav-link {
+    color: white;
+}
+
+/* Navbar links */
+
+.navbar-nav a {
+    font-weight: bold;
+}
+
+.navbar-nav a:hover {
+    color: orangered;
+}
+
+.nav-link.active{
+    color: orangered !important;
+    border-bottom:2px solid orangered;
+}
+
+/* Login button */
+
+.loginbtn {
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.loginbtn:hover {
+    background-color: rgb(0, 183, 255);
+    color: white;
+}
+
+/* ---------- OFFCANVAS ---------- */
+
+.offcanvas {
+    background-color: blueviolet;
+    color: white;
+}
+
+.offcanvas .nav-link {
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.offcanvas .nav-link:hover {
+    color: red;
+}
+
+.offcanvas .btn {
+    background-color: white;
+    color: blueviolet;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.offcanvas .btn:hover {
+    background-color: rgb(0, 183, 255);
+    color: white;
+}
+
+/* ----------=----------=----------=----------=Main sections=----------=----------=----------=---------- */
+.maincontent {
+    padding: 80px 0;
+}
+
+/* ----------=----------=----------=hero-section=----------=----------=----------= */
+.hero-section {
+    color: rgb(75, 75, 255);
+    margin-top: 25px;
+    background-color: rgb(152, 212, 235);
+    border-radius: 25px;
+}
+
+.hero-section p {
+    color: black;
+}
+
+.hero-section a {
+    background-color: white;
+    color: rgb(75, 75, 255);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.hero-section a:hover {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}
+
+/* ----------=----------=----------=smart-features=----------=----------=----------= */
+.smart-features {
+    color: blueviolet;
+    margin-top: 25px;
+    background-color: rgb(224, 194, 252);
+    border-radius: 25px;
+}
+
+/* ----------=----------=----------=app-priview=----------=----------=---------- */
+.app-preview {
+    color: rgb(255, 75, 100);
+    margin-top: 25px;
+    background-color: pink;
+    border-radius: 25px;
+}
+
+.app-preview p {
+    color: black;
+}
+
+/* ----------=----------=----------=how-to-works=----------=----------=---------- */
+.how-it-works {
+    margin-top: 25px;
+    padding-bottom: 50px;
+    background-color: rgb(250, 202, 113);
+    border-radius: 25px;
+}
+
+/* HEADING */
+
+.head {
+    text-align: center;
+    color: orangered;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+/* SECTION LAYOUT */
+
+.how-it-works-section {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 0;
+}
+
+/* CONTENT */
+
+.how-it-works-content {
+    color: white;
+}
+
+.how-it-works-content h2 {
+    text-align: center;
+    color: rgb(255, 100, 45);
+    font-weight: bold;
+}
+
+.how-it-works-content p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* IMAGE */
+
+.how-it-works-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 6px;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width:768px) {
+
+    .how-it-works-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .how-it-works-image img {
+        max-width: 75%;
+    }
+
+}
+
+/* TABLET VIEW */
+
+@media (min-width:769px) and (max-width:1024px) {
+
+    .how-it-works-section {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .how-it-works-image img {
+        max-width: 350px;
+    }
+
+}
+
+/* DESKTOP VIEW */
+
+@media (min-width:1025px) {
+
+    .how-it-works-section {
+        flex-direction: row;
+    }
+
+}
+
+/* ----------=----------=----------=call-to-action=----------=----------=---------- */
+.call-to-action {
+    color: rgb(75, 75, 255);
+    margin-top: 25px;
+    background-color: skyblue;
+    border-radius: 25px;
+}
+
+.call-to-action p {
+    color: black;
+}
+
+.call-to-action a {
+    background-color: white;
+    color: rgb(75, 75, 255);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.call-to-action a:hover {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* ----------=----------=----------=----------=FOOTER=----------=----------=----------=---------- */
+#foot_top {
+    background: rgb(50, 50, 50);
+    text-align: center;
+    padding: 12px;
+}
+
+#foot_top a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#foot_top a:hover {
+    color: blueviolet;
+}
+
+#foot_mid {
+    background: rgb(25, 25, 25);
+    color: white;
+    padding: 40px 0;
+}
+
+#foot_mid a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#foot_mid a:hover {
+    color: blueviolet;
+}
+
+#foot_bottom {
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+
+
+
+.fade-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+
+.fade-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}

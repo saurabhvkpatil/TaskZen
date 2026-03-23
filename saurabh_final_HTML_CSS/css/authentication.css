@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-purple {
+    background: blueviolet;
+}
+
+.dashboard-main {
+    min-height: 100vh;
+    background-image: url("../images/dashboardbg02.png");
+    background-repeat: repeat;
+    background-size: 300px;
+}
+
+.foot {
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+.auth-container {
+    background: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+    margin-bottom: 20px;
+}
+
+.switch {
+    font-size: 14px;
+}
+
+.switch a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}

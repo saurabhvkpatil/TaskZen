@@ -1,0 +1,207 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-purple {
+    background: blueviolet;
+}
+
+.dashboard-main {
+    min-height: 100vh;
+    background-image: url("../images/dashboardbg02.png");
+    background-repeat: repeat;
+    background-size: 300px;
+}
+
+.foot {
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+
+/* CONTAINER */
+
+.form-container {
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+/* CARD */
+
+.form-card {
+    /* background-color: rgb(200, 200, 255); */
+    background: rgb(200, 100, 255);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: bold;
+}
+
+.form-card h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* LABELS */
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* INPUTS */
+
+.form-card input,
+.form-card textarea {
+
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+/* RADIO SECTION */
+
+.radio-section {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.radio-column {
+    flex: 1;
+}
+
+/* RADIO ITEMS */
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.radio-item input {
+    width: auto;
+    margin: 0;
+}
+
+/* BUTTONS */
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    /* Horizontal by default (desktop & tablet) */
+    gap: 15px;
+}
+
+.form-buttons a,
+.form-buttons button {
+
+    flex: 1;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: bold;
+
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+/* Button-color */
+.btn-edit {
+    background: green;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-delete {
+    background: red;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-complete {
+    background: gold;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-back {
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+
+/* HOVER */
+
+.btn-edit:hover {
+    background: white;
+    color: green;
+    border: 2px solid green;
+}
+
+.btn-delete:hover {
+    background: white;
+    color: red;
+    border: 2px solid red;
+}
+
+.btn-complete:hover {
+    background: white;
+    color: gold;
+    border: 2px solid gold;
+}
+
+.btn-back:hover {
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/* MOBILE */
+
+@media(max-width:767px) {
+
+    .radio-section {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-card {
+        padding: 30px 20px;
+    }
+
+}

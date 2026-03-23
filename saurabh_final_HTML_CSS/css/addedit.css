@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-purple {
+    background: blueviolet;
+}
+
+.dashboard-main {
+    min-height: 100vh;
+    background-image: url("../images/dashboardbg02.png");
+    background-repeat: repeat;
+    background-size: 300px;
+}
+
+.foot {
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+/* ================= GENERAL STYLES ================= */
+
+/* ================= FORM CONTAINER ================= */
+.form-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+/* ================= FORM CARD ================= */
+.form-card {
+    background-color: rgb(200, 100, 255);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.form-card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white; /* blueviolet like home page */
+    margin-bottom: 30px;
+}
+
+/* ================= FORM FIELDS ================= */
+.form-card label {
+    display: block;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.form-card input,
+.form-card textarea,
+.form-card select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 12px;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-card input:focus,
+.form-card textarea:focus,
+.form-card select:focus {
+    border-color: black; /* cyan hover like home page */
+}
+
+/* ================= BUTTONS ================= */
+.form-buttons a {
+    flex: 1;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: bold;
+
+    /* text-align: center; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    /* transition: 1s; */
+
+}
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn-add, .btn-edit{
+    background: green;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-cancle{
+    background: gold;
+    color: black;
+    border: 2px solid black;
+}
+
+/* Button-Hover */
+.btn-add:hover, .btn-edit:hover{
+    background: white;
+    color: green;
+    border: 2px solid green;
+
+}
+
+.btn-cancle:hover{
+    background: white;
+    color: gold;
+    border: 2px solid gold;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 767px) {
+    .form-card {
+        padding: 30px 20px;
+    }
+}
